@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- =====Barra de Navegação ===== -->
     <div class="nav-bar">        
          
@@ -33,6 +34,34 @@
             </table >
         
     </div>
+
+            <!-- =======Nova Transação===== -->
+    <form class="nova-t">
+        <div id="titulo" >
+            <label for=""> Nova transação </label>
+        </div>
+
+        <div class="dados">
+            <div>
+                <label for="tipo"> Tipo de transação </label>
+                <input type="text" name="tipo" placeholder="Compra">
+            </div>
+            
+            <div>
+                <label for="nome"> Nome da mercadoria </label>
+                <input type="text" name="nome" placeholder="Input">
+            </div>
+            
+            <div>
+                <label for="valor"> Valor </label>
+                <input type="text" name="valor" placeholder="R$ 0,00">
+            </div>
+            
+            <section >
+                <input type="button" value="Adicionar transação">
+            </section>
+        </div>
+    </form>
     
 </body>
 </html>
