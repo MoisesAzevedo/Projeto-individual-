@@ -5,8 +5,8 @@ body{
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
-    color: rgb(7, 49, 49);
-    background-color: rgb(149, 202, 183);
+    color: rgb(0, 0, 0);
+    background-color: rgb(253, 255, 254);
 }
 
 
@@ -16,10 +16,11 @@ body{
 ================================================== */
 
 .nav-bar{
-    background-color: white;
+    display: flex;
+    background-color: rgb(179, 179, 179);
     padding-top: 2%;
     font-size: 25px;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     padding-left: 15px;
     margin-bottom: 15px;
 }
@@ -29,20 +30,50 @@ body{
 ================================================== */
 
 .menu{
-    padding-left: 600PX;
-    background: linear-gradient(50deg,rgb(149, 202, 183),rgb(34, 67, 55));
+   
+    padding-left: 8;
+    margin-left: 335px;
+    align-items: center;
+    display: flex;
 }
 
-.menu .ancora {
+.menu label{
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.menu  a label:hover{
+.menu  label:hover{
     font-weight: bold;
-    color: rgb(5, 199, 135);
+    color: rgb(84, 93, 90);
     cursor: pointer;
+}
+
+.menu ul{
+    margin-top: 0;
+    margin: auto;
+}
+
+.menu li{
+   display: flex;
+   list-style-type:none;
+ 
+}
+.manu ul li div {
+    margin-left: 1px;
+    border: 30px solid rgb(187, 21, 21);
+    display: flex;
+}
+
+.li-menu{
+   font-size: 15px;
+   margin-left: 5px;
+   }
+
+.div-ul{
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
 }
 
 /* ==================================================
@@ -50,7 +81,6 @@ body{
 ================================================== */
 
 .nova-t {
-    position: relative;
     border: 2px solid rgb(39, 38, 38);
     border-radius: 1%;
     width: 40%;
@@ -70,6 +100,7 @@ body{
 .dados{
     margin-right: 38%;
 }
+
 .nova-t .dados div {
     margin-right: 39%;
     margin-bottom: 22px;
@@ -81,17 +112,19 @@ body{
     padding-bottom: 10px;
 }
 
-.dados section input {
-    position: absolute;
+.dados section button {
     background-color: rgb(32, 31, 31);
     border: none;
-    width: 384px;
+    width: 392px;
+    border-radius: 2%;
     padding-bottom: 14px;
     color: white;
     font-size: 18px;
-}
+    padding-top: 5px;
+    padding-bottom: 5px; 
+}  
 
-.dados section input:hover {
+.dados section button:hover {
     background-color: rgb(63, 63, 63);
     cursor: pointer;
 }
