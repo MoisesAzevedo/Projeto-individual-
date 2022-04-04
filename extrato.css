@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.extrato {
+    width: 50%;
+    margin-left: 509px;
+    margin-top: -397px;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.extrato h3{
+    margin-left: 178px;
+    margin-bottom: 45px;
+    
+
+}
+
+.merca{
+    border-bottom: 1px solid black;
+    
+}
+#merca{
+    border-bottom: 1px solid black;
+    
+}
+
+.merca h4{
+    margin-top: -23px;
+    position: absolute;
+    margin-left: 46px
+}
+
+.valor{
+    margin-top: -23px;
+    position: absolute;
+    margin-left: 451px;
+    font-family: 'Lato', sans-serif;
+}
+
+#valor{
+    margin-top: -23px;
+    position: absolute;
+    margin-left: 451px;
+    font-family: 'Lato', sans-serif;
+}
+
+#merca pre{
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3px;
+    margin-left: 46px;
+    font-size: 14px;
+}
+
+.merca-p{
+    display: none;
+}
+
+.total{
+    margin-bottom: 3px;
+    margin-left: 46px;
+    font-size: 14px;
+    border-top: 1px solid black;
+    margin-left: 0%;
+    margin-top: 1%;
+}
+
+.total pre{
+    font-family: 'Lato', sans-serif;
+    margin-left: 47px;
+}
+
+#total{        
+    margin-bottom: 3px;
+    margin-left: 46px;
+    font-size: 14px;
+    border-top: 1px solid black;
+    margin-left: 0%;
+    margin-top: 1%;
+}

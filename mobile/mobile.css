@@ -1,0 +1,178 @@
+@media screen and (max-width:500px){
+
+    body{
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        background-color: rgb(253, 255, 254);
+        width: 411px;
+    }
+    
+    /* ==================================================
+            Barra de navegação
+    ================================================== */
+    
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        background-color: rgb(179, 179, 179);
+        width: 411px;
+        font-size: 20px;
+        padding: 16px;
+        margin-bottom: 15px;
+    }
+
+    .nav-bar img{
+        width: 9%;
+        margin-right: 86px;
+    }
+    
+    /* ============================================ */
+        .menu{
+            display: none;
+        }
+    /* ============================================ */
+
+    /* ==================================================
+            Nova Transação
+    ================================================== */
+
+    .nova-t {
+        border: none;
+        border-radius: 1%;
+        width: 99%;
+        padding-bottom: 7%;
+        padding-left: 22px;
+        margin-left: 15px;
+        color: black;
+    }
+
+    .nova-t #titulo{
+    display: none;
+    }
+
+    .dados{
+        margin-right: 38%;
+    }
+
+    .nova-t .dados div {
+        margin-right: 39%;
+        margin-bottom: 22px;
+    }
+
+    .dados div input{
+        width: 248%;
+        margin-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .dados section button {
+        background-color: rgb(32, 31, 31);
+        border: none;
+        width: 392px;
+        border-radius: 2%;
+        padding-bottom: 14px;
+        color: white;
+        font-size: 18px;
+        padding-top: 5px;
+        padding-bottom: 5px; 
+    }  
+
+    .dados section button:hover {
+        background-color: rgb(63, 63, 63);
+        cursor: pointer;
+    }
+
+    /* ==================================================
+                 Extrato
+    ================================================== */
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+    .extrato {
+        width: 94%;
+        margin-left: 41px;
+        margin-top: 0;
+        font-family: 'Lato', sans-serif;
+        border-top: 1px solid black;
+        
+    }
+
+    .extrato h3{
+        margin-left: 96px;
+        margin-bottom: 42px;
+        
+
+    }
+
+    .merca{
+        border-bottom: 1px solid black;
+        
+    }
+
+    #merca{
+        display: none;
+        
+    }
+
+    .merca h4{
+        margin-top: -23px;
+        position: absolute;
+        margin-left: 46px
+    }
+
+    .valor{
+        margin-top: -23px;
+        position: absolute;
+        margin-left: 338px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    #valor{
+        display: none;
+    }
+
+    .merca pre{
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 3px;
+        margin-left: 21px;
+        font-size: 14px;
+    }
+
+    .merca-p{
+        display: block;
+        margin-top: -7px;
+        position: absolute;
+        margin-left: 1px;
+
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 3px;
+        font-size: 14px;
+        width: 384px;
+    }
+
+
+    .total{
+        
+        margin-bottom: 3px;
+        margin-left: 46px;
+        font-size: 14px;
+        border-top: 1px solid black;
+        margin-left: 0%;
+        margin-top: 1%;
+    }
+    .total pre{
+        font-family: 'Lato', sans-serif;
+        margin-left: 47px;
+    }
+
+    #total{   
+    display: none;
+    }
+
+
+}
+
+
+

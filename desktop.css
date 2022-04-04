@@ -25,6 +25,10 @@ body{
     margin-bottom: 15px;
 }
 
+.nav-bar img{
+    width: 3% ;
+    margin-right:15px;
+}
 /* ==================================================
             MENU
 ================================================== */
@@ -61,7 +65,6 @@ body{
 }
 .manu ul li div {
     margin-left: 1px;
-    border: 30px solid rgb(187, 21, 21);
     display: flex;
 }
 
@@ -76,55 +79,3 @@ body{
     padding: 8px;
 }
 
-/* ==================================================
-            Nova Transação
-================================================== */
-
-.nova-t {
-    border: 2px solid rgb(39, 38, 38);
-    border-radius: 1%;
-    width: 40%;
-    padding-bottom: 7%;
-    padding-left: 22px;
-    margin-left: 15px;
-    color: black;
-}
-
-.nova-t #titulo{
-    font-size: 22px;
-    margin-left: 125px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.dados{
-    margin-right: 38%;
-}
-
-.nova-t .dados div {
-    margin-right: 39%;
-    margin-bottom: 22px;
-}
-
-.dados div input{
-    width: 248%;
-    margin-top: 5px;
-    padding-bottom: 10px;
-}
-
-.dados section button {
-    background-color: rgb(32, 31, 31);
-    border: none;
-    width: 392px;
-    border-radius: 2%;
-    padding-bottom: 14px;
-    color: white;
-    font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px; 
-}  
-
-.dados section button:hover {
-    background-color: rgb(63, 63, 63);
-    cursor: pointer;
-}
