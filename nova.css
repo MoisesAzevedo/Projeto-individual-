@@ -46,15 +46,6 @@
 
 }
 
-/* .dados div .input1{
-    width: 248%;
-    margin-top: 5px;
-    padding-bottom: 10px;
-} */
-
-/* .dados div .input2{
-    width: 248%;
-} */
 .nova-t section {
     width: 370px;
     margin-left: 14.9px
@@ -63,7 +54,7 @@
 .nova-t section button {
     background-color: rgb(32, 31, 31);
     border: none;
-    border-radius: 2%;
+    border-radius: 4px;
     color: white;
     font-size: 18px;
     padding-top: 5px;
