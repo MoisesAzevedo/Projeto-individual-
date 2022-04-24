@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 /* ==================================================
             Nova Transação
 ================================================== */
@@ -5,54 +7,73 @@
 .nova-t {
     border: 1px solid rgb(39, 38, 38);
     border-radius: 1%;
-    width: 32%;
-    padding-bottom: 7%;
-    padding-left: 22px;
-    margin-left: 15%;    
-    color: black;
+    margin-left: 0;
+    width: 400px;
+    height: 344px;
+    margin-right: 57px;
+    
 
     
 }
 
-.nova-t #titulo{
-    font-size: 22px;
-    margin-left: 31%;
+.nova-t h1{
+    font-size: 18px;  
+    font-weight: bold;
+    height: 20px;
+    width: 174px;
+    margin: auto;
     margin-top: 20px;
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .dados{
-    margin-right: 38%;
+    margin-top: 25px;
+    margin-left: 14.9px;
+    margin-top: 13px;
+    
 }
 
-.nova-t .dados div {
-    margin-right: 39%;
+.dados div {
     margin-bottom: 22px;
+    display: grid;
 }
 
-.dados div input{
+.dados input{
+    width: 352px;
+    height: 32px;
+    padding-left: 10px;
+
+}
+
+/* .dados div .input1{
     width: 248%;
     margin-top: 5px;
     padding-bottom: 10px;
-}
+} */
 
-.dados div .input2{
+/* .dados div .input2{
     width: 248%;
+} */
+.nova-t section {
+    width: 370px;
+    margin-left: 14.9px
 }
 
-.dados section button {
+.nova-t section button {
     background-color: rgb(32, 31, 31);
     border: none;
-    width: 154%;
     border-radius: 2%;
-    padding-bottom: 14px;
     color: white;
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 5px; 
+
+    width: 370px;
+    height: 32px;
 }  
 
-.dados section button:hover {
-    background-color: rgb(63, 63, 63);
+.nova-t section button:hover {
+    background-color: #8d8d8d;
     cursor: pointer;
 }

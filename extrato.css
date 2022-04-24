@@ -3,39 +3,54 @@
 
 
 .extrato {
-    width: 40%;
-    margin-left: 51%;
-    margin-top: -397px;
-    font-family: 'Lato', sans-serif;
-    
-    
-    
+    font-family: 'Lato', sans-serif;  
+    position: relative;
+    width: 680px;
+    margin-left: 0;
 }
 
+
 .extrato h3{
-    margin-left: 178px;
-    margin-bottom: 45px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 186px;
     
 
 }
 
 .merca{
     border-bottom: 1px solid black;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
+    height: 44px
     
 }
 #merca{
     border-bottom: 1px solid black;
+    display: flex;
 }
 
 #merca p{
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 14px; 
 }
 
-.merca h4{
-    margin-top: -23px;
+#merca :nth-child(n + 2){
+    margin-left: 30px;
+}
+
+#merca :nth-child(n + 3) {
+    display: block;
     position: absolute;
-    margin-left: 46px
+    right: 7px;
+}
+
+
+
+.merca h4{
+    position: absolute;
+    margin-left: 40px
 }
 
 .valor{
@@ -60,6 +75,7 @@
 }
 
 
+
 #total{     
     display: flex;   
     margin-bottom: 3px;
@@ -68,17 +84,25 @@
     border-top: 1px solid black;
     margin-left: 0%;
     margin-top: 1%;
+    font-weight: bold;
 }
 
-#valor{
-    font-family: 'Lato', sans-serif;
-    margin-right: 0%;
-    padding-left: 73%;        
-    margin-top: -5.5%;
-    
-    margin-right: 0%;
-    padding-left: 73%;
+#total :nth-child(n + 2) {
+    margin-left: 37px;
+}
 
+#total :nth-child(n + 3) {
+    display: block;
+    position: absolute;
+    right: 7px;
+    font-weight: bold;
+}
+
+#valor {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    position: absolute;
+    right: 20px;
 }
 
 .valores{
@@ -87,34 +111,34 @@
     width: 352px;    
 }
 
-.p-line1{
+/* .p-line1{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     margin-right: -1%;
     padding-left: 60%;
     margin-bottom: 10%;    
-}
+} */
 
-.p-line2{
+/* .p-line2{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     margin-right: -1%;
     padding-left: 59%;
     margin-bottom: 7%;
-}
+} */
 
 
-.p-line3{
+/* .p-line3{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     margin-right: -1%;
     padding-left: 68%;
     margin-bottom: 10%;
-}
+} */
 
-.p-total{
+/* .p-total{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     margin-right: -1%;
     padding-left: 59%;
-}
+} */

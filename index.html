@@ -8,90 +8,90 @@
     <link rel="stylesheet" href="desktop.css">
     <link rel="stylesheet" href="nova.css">
     <link rel="stylesheet" href="extrato.css">
-    <link rel="stylesheet" href="tablet/tablet.css">
+    <!-- <link rel="stylesheet" href="tablet/tablet.css">
     <link rel="stylesheet" href="mobile/mobile.css">
-    <link rel="stylesheet" href="landscape/land.css">
-</head>
+    <link rel="stylesheet" href="landscape/land.css"> -->
+<!-- </head -->
 <body>
 
     <!-- =====Barra de Navegação ===== -->
     <div class="nav-bar">        
          
             <img src="img/Ellipse 13.png" >
-            Controle financeiro 
+            <h1>Controle financeiro</h1> 
             
            <div class="menu">
                 <ul>
-                    <li >                        
-                        <div class="div-ul" >                                
-                            <label class="li-menu" > Limpar dados |</label>
-                            <label class="li-menu" > Cadastro de transações  </label> 
-                        </div>
-                    </li>                    
+                    <li >Limpar dados </li>
+                    <li>|</li>                              
+                    <li> Cadastro de transações </li>                                                                                 
                 </ul>
             </div>
     </div>
 
+    <main class="main">
             <!-- =======Nova Transação===== -->
-    <form class="nova-t">
-        <div id="titulo" >
-            <label for=""> Nova transação </label>
-        </div>
+        <form class="nova-t">
+            
+            <h1> Nova transação </h1>
+        
+            <div class="dados">
+                <div >
+                    <label for="tipo"> Tipo de transação </label>
+                    <input type="text" name="tipo" placeholder="Compra" >
+                </div>
+                
+                <div >
+                    <label for="nome"> Nome da mercadoria </label>
+                    <input type="text" name="nome" placeholder="Input">
+                </div>
+                
+                <div   > 
+                    <label for="valor"> Valor </label>
+                    <input type="text" name="valor" placeholder="R$ 0,00" >
+                </div>
+            </div>
 
-        <div class="dados">
-            <div class="input1">
-                <label for="tipo"> Tipo de transação </label>
-                <input type="text" name="tipo" placeholder="Compra" >
-            </div>
-            
-            <div  class="input2">
-                <label for="nome"> Nome da mercadoria </label>
-                <input type="text" name="nome" placeholder="Input">
-            </div>
-            
-            <div  class="input3" > 
-                <label for="valor"> Valor </label>
-                <input type="text" name="valor" placeholder="R$ 0,00" >
-            </div>
-            
             <section >
-                <button>Adicionar transações </button>
+                <button>Adicionar transações </button>          
             </section>
-        </div>
-    </form>
+        </form>
 
-                         <!-- Extrato -->
-    <div class="extrato"> 
-        
-        <h3> Extrato de transações</h3>
+                            <!-- Extrato -->
+        <div class="extrato"> 
+            
+            <h3> Extrato de transações</h3>
 
-        <div class="merca">
-           <h4> Mercadoria </h4>
-        </div>
+            <div class="merca">
+                <h4> Mercadoria </h4>
+                <p id="valor">Valor</p> 
+            </div>
 
-        <div id="merca">
-            <p>+ Lorem ipsum, dolor sit</p>     
-        </div>
-        
-        <div id="merca">
-            <p>- Quo ipsa aspernatur earum,</p>     
-        </div>
-        
-        <div id="merca">
-            <p>+ Ab incidunt nemo </p>     
-        </div>
-        
-        <div id="total">
-            <p id="tot-tablet">Total</p>     
-        </div>
+            <div id="merca">
+                <p>+</p>
+                <p>Lorem ipsum, dolor sit</p> 
+                <p >R$ 12.999,00</p>    
+            </div>
+            
+            <div id="merca">
+                <p>-</p>
+                <p>Quo ipsa aspernatur earum,</p> 
+                <p>R$ 12.999,00</p>    
+            </div>
+            
+            <div id="merca">
+                <p>+</p>
+                <p>Ab incidunt nemo </p> 
+                <p>R$ 9,00</p>    
+            </div>
+            
+            <div id="total">
+                <p></p>
+                <p id="tot-tablet">Total</p>  
+                <p>R$ 12.909,00</p>   
+            </div>
 
-        <div class="valores">  
-            <p id="valor">Valor</p>          
-            <p class="p-line1">R$ 12.999,00</p>
-            <p class="p-line2">R$ 12.999,00</p>
-            <p class="p-line3">R$ 9,00</p>
-            <p class="p-total">R$ 12.909,00</p>
-        </div>
+    </main>  <!-- Descer para mobile-->
 
         
         <!-- Extrato no mobile-->

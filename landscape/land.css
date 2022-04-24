@@ -1,23 +1,19 @@
 @media screen and (min-width:1112px){
-    .nav-bar{
+    /* .nav-bar{
         margin-right: -1%;
-    }
+    } */
 
-    .menu ul {
-        margin-right:-1%;
-    }
-
-    .nova-t {        
+    /* .nova-t {        
         width: 41%;   
         margin-left: 2%;
-    }
+    } */
 
-    .extrato {
+    /* .extrato {
         width: 47%
-    }
+    } */
 
-    .valores {
-        margin-left: 40%;
+    /* .valores {
+        margin-left: 40%; */
 }
 
 }
