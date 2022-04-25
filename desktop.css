@@ -1,5 +1,4 @@
 
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
@@ -32,7 +31,7 @@ body{
     
 }
 
-.nav-bar img{
+.logo{
     margin-right:15px;    
     margin-left: 0;
 
@@ -42,6 +41,10 @@ body{
 
 .nav-bar h1{
     font-size: 20px;
+}
+
+.menu2 {
+    display: none;
 }
 /* ==================================================
             MENU
