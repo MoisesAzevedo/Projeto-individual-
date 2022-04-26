@@ -4,11 +4,17 @@
 
 @media screen and (max-width:1100px) {
     
+    .nav-bar {
+        height: 60px;
+    }
+
+    .nav-bar h1{
+        margin: 235px;
+    }
+
     .logo{
         width: 30px;
         height: 27.63px;
-        position: absolute;
-        left: 22px;
     }
 
     .menu {
@@ -19,8 +25,6 @@
         display: block;
         width: 18px;
         height: 12px;
-        position: absolute;
-        right: 21px;
     }
 
     .main {
