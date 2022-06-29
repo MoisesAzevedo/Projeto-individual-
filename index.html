@@ -23,7 +23,7 @@
            <div class="menu">
                 <ul>
                     <li >Limpar dados </li>
-                    <li>|</li>                              
+                    <li id="menu-li2">|</li>                              
                     <li> Cadastro de transações </li>                                                                                 
                 </ul>
             </div>
@@ -41,18 +41,24 @@
         
             <div class="dados">
                 <div >
-                    <label for="tipo"> Tipo de transação </label>
-                    <input type="text" name="tipo" placeholder="Compra" >
+                    <!-- <label for="tipo"> Tipo de transação </label>
+                    <input type="text" name="tipo" placeholder="Compra" > -->
+                    <p> Tipo de transação</p>
+                    <select name="select" id="select">
+                        <option value="tipo" selected disabled>Selecione</option>
+                        <option value="compra">Compra</option>
+                        <option value="venda">Venda</option>
+                    </select>
                 </div>
                 
                 <div >
                     <label for="nome"> Nome da mercadoria </label>
-                    <input type="text" name="nome" placeholder="Input">
+                    <input type="text" name="nome" placeholder="Digite a mercadoria">
                 </div>
                 
                 <div   > 
                     <label for="valor"> Valor </label>
-                    <input type="text" name="valor" placeholder="R$ 0,00" >
+                    <input type="text" name="valor" placeholder="R$ 00,00" >
                 </div>
             </div>
 

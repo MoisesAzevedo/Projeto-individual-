@@ -86,9 +86,13 @@ body{
 }
 
 .menu  li:hover{
-    font-weight: bold;
     color: #bdbdbd;
     cursor: pointer;
+}
+
+#menu-li2:hover {
+    cursor: default;
+    color: inherit;
 }
 
 .main{

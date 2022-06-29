@@ -31,8 +31,18 @@
     .dados label{
         margin-left: 0;
     }
+  
+    .dados p{
+        margin-left: 0;
+    }
 
     .dados input{
+        margin-left: 0;
+        width: 371px;
+    }
+    
+    .dados select{
+        height: 33px;
         margin-left: 0;
         width: 371px;
     }

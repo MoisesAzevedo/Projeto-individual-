@@ -50,9 +50,22 @@
     .dados label {
         margin-left: 20px;
     }
+  
+    .dados p {
+        margin-left: 20px;
+    }
 
     .dados input {
         width: 150px;
+        margin-left: 20px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+   
+    .dados select {
+        width: 150px;
+        
+        height: 31px;
         margin-left: 20px;
         box-sizing: border-box;
         padding-left: 10px;
