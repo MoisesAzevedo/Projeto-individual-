@@ -93,30 +93,26 @@ function extrato_function(c) {
    /*   =========================================================
                     Para somar/subtrair o valor total
      ========================================================= */
-    
-
-
     if (document.getElementById('select').value == 'venda') {
         if (imprime == 0){
             var total = extrato1[imprime].valor //valor escrito agora
         }
        
          if (imprime == 1) {             
-            imprimeMenosUm = imprime - 1                        //para pegar o nº do array anterior (imprime 0). 
-            var arrayAnterior = extrato1[imprimeMenosUm].valor    //As variaveis estão em string, é preciso convertê-las
-            var arrayAtual = extrato1[imprime].valor 
+            var total0 = localStorage.getItem('total')
+            var total = JSON.parse(total0)
+
+            var arrayAtual = extrato1[imprime].valor        //As variaveis estão em string, é preciso convertê-las
+            var array_atual = parseFloat(arrayAtual)             //Função parseFLoat: Converte string em number (flutuante); parseInt seria para numero inteiro
     
-            var array_anterior = parseFloat(arrayAnterior)      //Função parseFLoat: Converte string em number (flutuante); parseInt seria para numero inteiro
-            var array_atual = parseFloat(arrayAtual)
-    
-            var total = array_anterior + array_atual
+            var total = total + array_atual
          }
     
         //Para somar as próximas variáveis com o valor da soma das anteriores (em total)
         if(imprime > 1){    
             var total0 =  localStorage.getItem('total')
             var total =  JSON.parse(total0) 
-    
+
             var arrayAtual = extrato1[imprime].valor  
             var array_atual = parseFloat(arrayAtual)
 
@@ -127,15 +123,14 @@ function extrato_function(c) {
             var total = extrato1[imprime].valor //valor escrito agora (string)
             var totalNumber = parseFloat(total)
             total = 0 - totalNumber
-            localStorage.setItem('total', JSON.stringify(total))   //Para pegar mandar o valor subtraído ao localStorage
         }
 
         if (imprime == 1) {             
       
             var total0 = localStorage.getItem('total')
             var total = JSON.parse(total0)
+            
             var arrayAtual = extrato1[imprime].valor        //As variaveis estão em string, é preciso convertê-las
-          
             var array_atual = parseFloat(arrayAtual)        //Função parseFLoat: Converte string em number (flutuante); parseInt seria para numero inteiro
 
             var total = total - array_atual
