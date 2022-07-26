@@ -16,33 +16,56 @@ if (total == null) {
     var total = 0
 }
 
-//printa na tela automaticamente
-for (imprime in extrato1) {
-    if (extrato1[imprime].p1 == "venda"){
-        document.querySelector('#extrato-itens').innerHTML += `
-        <div id="merca">
-            <p>+</p>
-            <p>${extrato1[imprime].name}</p> 
-            <p >R$${extrato1[imprime].valor}</p>    
-        </div>`
-    } else{
-        document.querySelector('#extrato-itens').innerHTML += `
-        <div id="merca">
-            <p>-</p>
-            <p>${extrato1[imprime].name}</p> 
-            <p >R$${extrato1[imprime].valor}</p>    
-        </div>`
-    }                                     
-}
+/* =========================================================== */
+function desenhaTabela(){
+    var extrato = localStorage.getItem('extrato')    //pega do localStorage como string
+    if (extrato != null) {
+        var extrato1 = JSON.parse(extrato)              //pega a variavel extrato e converte em objeto
+    } else {
+        var extrato1 = []                               //Caso não exista nada no localStorage, extrato1 será um array vazio
+    }
+    
+    //pegar o total do local storage
+    var total0 =  localStorage.getItem('total')
+    var total =  JSON.parse(total0)
+    if (total == null) {
+        var total = 0
+    }
 
-//printa na tela automaticamente o total
-document.getElementById('total').remove()               
-document.querySelector('.extrato').innerHTML += `
-<div id="total">
-    <p></p>
-    <p id="tot-tablet">Total</p>  
-    <p>${total}</p> 
-</div>   `
+    //printa na tela
+    for (imprime in extrato1) {
+        if (extrato1[imprime].p1 == "venda"){
+            document.querySelector('#ext-itens').innerHTML += `
+            <div id="merca">
+                <p>+</p>
+                <p>${extrato1[imprime].name}</p> 
+                <p >R$${extrato1[imprime].valor}</p>    
+            </div>`
+        } else{
+            
+            document.querySelector('#ext-itens').innerHTML += `
+            <div id="merca">
+                <p>-</p>
+                <p>${extrato1[imprime].name}</p> 
+                <p >R$${extrato1[imprime].valor}</p>    
+            </div>`
+        };                                     
+    };
+
+    //printa na tela o total
+    document.getElementById('total').remove()               
+    document.querySelector('.extrato').innerHTML += `
+    <div id="total">
+        <p></p>
+        <p id="tot-tablet">Total</p>  
+        <p>R$${total}</p> 
+    </div>`   
+    
+    if (extrato1 == []){
+        document.getElementById('merca').remove
+    }
+}
+/* =========================================================== */
 
 
    /*   =========================================================
@@ -74,14 +97,14 @@ function extrato_function(c) {
 
     for (imprime in extrato1) {
         if (extrato1[imprime].p1 == "venda"){
-            document.querySelector('#extrato-itens').innerHTML += `
+            document.querySelector('#ext-itens').innerHTML += `
             <div id="merca">
                 <p>+</p>
                 <p>${extrato1[imprime].name}</p> 
                 <p >R$${extrato1[imprime].valor}</p>    
             </div>`
         } else{
-            document.querySelector('#extrato-itens').innerHTML += `
+            document.querySelector('#ext-itens').innerHTML += `
             <div id="merca">
                 <p>-</p>
                 <p>${extrato1[imprime].name}</p> 
@@ -158,8 +181,76 @@ function extrato_function(c) {
     <div id="total">
         <p></p>
         <p id="tot-tablet">Total</p>  
-        <p>${total}</p> 
+        <p>R$${total}</p> 
     </div>   `
 }
 
 
+/* =============================================================================
+            Function limpa dados
+==============================================================================*/
+
+function limpaDados(p){
+    var limpaOk = confirm('Tem certeza que vai excluir todas as transações?');
+
+    if (limpaOk == true) {
+        extrato1.splice(p);
+        localStorage.setItem('extrato', JSON.stringify(extrato1));
+
+        var total = 0
+        localStorage.setItem('total', JSON.stringify(total))
+       
+        document.getElementById('ext-itens').remove();
+        document.getElementById('extrato-itens').innerHTML += `
+        <div id="ext-itens">
+        </div>`    
+    } else {
+        alert('Suas transações estão intáctas!')
+    }
+};
+
+desenhaTabela()
+
+/* var extrato = localStorage.getItem('extrato')    //pega do localStorage como string
+    if (extrato != null) {
+        var extrato1 = JSON.parse(extrato)              //pega a variavel extrato e converte em objeto
+    } else {
+        var extrato1 = []                               //Caso não exista nada no localStorage, extrato1 será um array vazio
+    }
+    console.log(extrato1)
+    
+    //pegar o total do local storage
+    var total0 =  localStorage.getItem('total')
+    var total =  JSON.parse(total0)
+    if (total == null) {
+        var total = 0
+    }
+
+    //printa na tela
+    for (imprime in extrato1) {
+        if (extrato1[imprime].p1 == "venda"){
+            document.querySelector('#ext-itens').innerHTML += `
+            <div id="merca">
+                <p>+</p>
+                <p>${extrato1[imprime].name}</p> 
+                <p >R$${extrato1[imprime].valor}</p>    
+            </div>`
+        } else{
+            
+            document.querySelector('#ext-itens').innerHTML += `
+            <div id="merca">
+                <p>-</p>
+                <p>${extrato1[imprime].name}</p> 
+                <p >R$${extrato1[imprime].valor}</p>    
+            </div>`
+        };                                     
+    };
+
+    //printa na tela o total
+    document.getElementById('total').remove()               
+    document.querySelector('.extrato').innerHTML += `
+    <div id="total">
+        <p></p>
+        <p id="tot-tablet">Total</p>  
+        <p>R$${total}</p> 
+    </div>`    */

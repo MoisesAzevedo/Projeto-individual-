@@ -28,3 +28,16 @@
     <p id="tot-tablet">Total</p>  
     <p>R$ 12.909,00</p>   
 </div>
+
+
+<!-- beckup -->
+
+//Remove, e desenha vazio
+if (extrato1 == []){      
+    document.getElementById('ext-itens').remove();
+    document.getElementById('extrato-itens').innerHTML += `
+    <div id="ext-itens">
+    </div>`
+    console.log(extrato1)
+    console.log('oi')
+} else {
