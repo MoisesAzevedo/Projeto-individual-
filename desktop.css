@@ -99,3 +99,39 @@ body{
     display: flex;
     justify-content: center;
 }
+
+/* ========================================================
+            Menu limpra dados (tablet)
+========================================================
+ */
+ .menuLimpa{
+    display: none;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 252px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: right;
+    background-color: #333333;
+ }
+
+ .menuLimpa h3{
+    display: block;
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+ .menuLimpa p {
+    margin: 5px;
+    cursor: pointer;
+ }
+ 
+ .menuLimpa p:hover {
+   color: #008c91;
+ }

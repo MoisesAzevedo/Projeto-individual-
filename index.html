@@ -29,7 +29,7 @@
                 </ul>
             </div>
 
-            <img src="img/Shape.png" class="menu2" >
+            <img src="img/Shape.png" class="menu2" onclick="menuDelete()" >
 
 
     </div>
@@ -58,7 +58,7 @@
                 
                 <div> 
                     <label for="valor"> Valor </label>
-                    <input type="text" name="valor" placeholder="R$ 00,00" id="merca_valor" required >
+                    <input type="text" name="valor" placeholder="R$ 0,00" id="merca_valor" required onKeyPress="return(MascaraMoeda(this,'.',',',event))">
                 </div>
             </div>
 
